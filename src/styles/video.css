@@ -78,8 +78,8 @@ video {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  position: fixed;
-  right: 60px;
+  position: absolute;
+  right: 12rem;
 }
 
 .upArrow:hover {
@@ -93,8 +93,8 @@ video {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  position: fixed;
-  right: 60px;
+  position: absolute;
+  right: 12rem;
   bottom: 5px;
 }
 
@@ -103,10 +103,44 @@ video {
 @media screen and (max-width: 1200px) {
   main {
     margin-left: 24rem;
+    width: 100%;
   }
 }
 @media screen and (max-width: 800px) {
   main {
     margin-left: 13rem;
+    width: 100%;
+  }
+
+  .upArrow {
+    right: 0rem;
+  }
+  .downArrow {
+    right: 0rem;
+  }
+  video {
+    width: 308px;
+  }
+  .icons__display {
+    left: 20rem;
+  }
+  .playbutton {
+    right: 17rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    margin-left: 7rem;
+    width: 100%;
+  }
+  .upArrow {
+    display: none;
+  }
+  .icons__display {
+    left: 18rem;
+  }
+  .downArrow {
+    display: none;
   }
 }

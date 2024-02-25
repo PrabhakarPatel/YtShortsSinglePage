@@ -34,6 +34,9 @@ div > ul > li:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .menuBar {
+    margin-left: 0rem;
+  }
   .menubar__Part2 {
     display: none;
   }
