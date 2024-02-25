@@ -1,0 +1,112 @@
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  position: relative;
+  margin-left: 50rem;
+  margin-top: 1rem;
+  overflow: auto;
+}
+
+.heading > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+video {
+  width: 400px;
+  margin-bottom: 5rem;
+  height: 710px;
+  border-radius: 2rem;
+}
+
+.heading > button {
+  background-color: white;
+  width: 5rem;
+  border-radius: 2rem;
+  border: 1px grey solid;
+  margin-left: 2rem;
+}
+
+.heading {
+  position: absolute;
+  bottom: 10rem;
+}
+
+.icons__display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3rem;
+  position: absolute;
+  left: 24rem;
+  top: 10rem;
+}
+.icons__display > svg {
+  margin: 20px;
+  background-color: #271f1e;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0.8rem;
+  color: white;
+}
+.icons__display > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 21px;
+  margin-top: 20px;
+}
+
+.playbutton {
+  position: absolute;
+  top: 2rem;
+  right: 51rem;
+  z-index: 10;
+  color: rgb(188, 9, 9);
+}
+
+.upArrow {
+  background-color: #271f1e;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+}
+
+.upArrow:hover {
+  background-color: rgb(30, 28, 28);
+}
+.downArrow:hover {
+  background-color: rgb(30, 28, 28);
+}
+.downArrow {
+  background-color: #271f1e;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 5px;
+}
+
+/* media query */
+
+@media screen and (max-width: 1200px) {
+  main {
+    margin-left: 24rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  main {
+    margin-left: 13rem;
+  }
+}

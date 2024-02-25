@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header > div {
+  margin: 10px;
+}
+
+/* HEADER LEFT */
+.header__left {
+  display: flex;
+}
+
+.header__left > span {
+  font-weight: 700;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+/* HEADER CENTER */
+.header__center > input {
+  width: 28rem;
+  border-top-left-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+  padding: 10px;
+  margin-top: 10px;
+}
+.IoSearch {
+  background-color: #271f1e;
+  border-top-right-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  width: 50px;
+  position: relative;
+  top: 14px;
+  height: 39px;
+  padding: 8px;
+}
+.aiFill {
+  background-color: #271f1e;
+  border-radius: 50%;
+  width: 39px;
+  position: relative;
+  top: 14px;
+  height: 39px;
+  margin-left: 14px;
+  padding: 8px;
+}
+/* HEADER RIGHT */
+
+.header__right > img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+/* header responsive  */
+@media screen and (max-width: 800px) {
+  /* header center */
+  .header__center > input {
+    width: 13rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__center > input {
+    width: 10rem;
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header__left > span {
+    display: none;
+  }
+  .header__center > input {
+    width: 6rem;
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__left > span {
+    display: none;
+  }
+  .header__center > input {
+    width: 4rem;
+  }
+}

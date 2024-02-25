@@ -1,0 +1,49 @@
+.menuBar {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  position: fixed;
+  height: 90vh;
+  margin-left: 3rem;
+  overflow-y: scroll;
+}
+.menubar__Part1 {
+  border-bottom: 1px solid black;
+}
+.menubar__Part2 {
+  border-bottom: 1px solid black;
+}
+.menubar__Part3 {
+  border-bottom: 1px solid black;
+}
+.menubar__Part4 {
+  border-bottom: 1px solid black;
+}
+
+div > ul > li {
+  list-style: none;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+div > ul > li:hover {
+  background-color: #271f1e;
+  border: 1px solid #271f1e;
+  border-radius: 10px;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .menubar__Part2 {
+    display: none;
+  }
+  .menubar__Part3 {
+    display: none;
+  }
+  .menubar__Part4 {
+    display: none;
+  }
+  .menuBar {
+    margin-top: 2.1rem;
+  }
+}
