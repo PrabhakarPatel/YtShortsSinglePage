@@ -68,7 +68,7 @@ video {
 .playbutton {
   position: absolute;
   top: 2rem;
-  right: 51rem;
+  right: 46rem;
   z-index: 10;
   color: rgb(188, 9, 9);
 }
